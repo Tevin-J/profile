@@ -1,0 +1,19 @@
+.slogan {
+    height: 250px;
+    background-color: #e4ddff;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mySlogan {
+
+}

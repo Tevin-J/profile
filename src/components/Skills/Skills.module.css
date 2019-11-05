@@ -1,0 +1,41 @@
+.skills {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #c9f2ea;
+}
+
+.containerSkillsInfo {
+    border: 1px solid;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTittle {
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.containerSkills {
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    border: 1px solid;
+    width: 25%;
+    height: 25%;
+    background-color: #f2f2f2;
+}

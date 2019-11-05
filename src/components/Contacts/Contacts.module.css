@@ -1,0 +1,22 @@
+.contacts {
+    height: 100vh;
+    background-color: #f7d5d4;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: center;
+    border: 1px solid;
+    width: 600px;
+    height: 300px;
+    background-color: #f2f2f2;
+}

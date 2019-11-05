@@ -1,0 +1,26 @@
+.mainInfo {
+    height: 100vh; /*vh это единица измерения которая под любое устройство
+    сделает высоту/ширину во весь экран (viewheight, viewwidth)*/
+    background-color: #ffe1f5;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    background-color: #f2f2f2;
+}

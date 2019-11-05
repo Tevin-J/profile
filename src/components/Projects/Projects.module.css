@@ -1,0 +1,40 @@
+.projects {
+    height: 100vh;
+    background-color: #fcedb3;
+    display: flex;
+    justify-content: center;
+}
+
+.containerProjectInfo {
+    display: flex;
+    width: 80%;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+.containerTitle {
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.containerProjects {
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.project {
+    border: 1px solid;
+    width: 40%;
+    height: 40%;
+    background-color: #f2f2f2;
+}
