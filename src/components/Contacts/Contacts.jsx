@@ -5,9 +5,20 @@ const Contacts = () => {
     return (
         <div className={style.contacts}>
             <div className={style.container}>
-                <form>
-                    Контакты
-                </form>
+                <div className={style.content}>
+                    <div className={style.title}>
+                        Контакты
+                    </div>
+                    <div className={style.form}>
+                        <form>
+
+                        </form>
+                    </div>
+                    <div className={style.button}>
+                        <button>Отправить</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
