@@ -1,10 +1,17 @@
 .navMenu {
-    width: 400px;
+    width: 100%;
     display: flex;
+    border: 1px solid;
     justify-content: space-between;
 }
 
 .navMenu a {
     text-decoration: none;
     color: black;
+}
+
+@media (min-width: 768px) {
+    .navMenu {
+        width: 400px;
+    }
 }

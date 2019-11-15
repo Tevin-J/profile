@@ -1,7 +1,13 @@
 import React from 'react';
 import style from './Projects.module.css';
+import Project from "./Project/Project";
 
 const Projects = () => {
+    const projectData = [
+        {id: 1, name: 'Название проекта', desc: 'Описание', img: 'img'},
+        {id: 2, name: 'Название проекта', desc: 'Описание', img: 'img'}
+    ];
+    const projectsElements = projectData.map(title => <Project name={title.name} desc={title.desc} img={title.img}/>)
     return (
         <div className={style.projects}>
             <div className={style.containerProjectInfo}>
@@ -11,38 +17,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className={style.containerProjects}>
-                    <div className={style.containerProject}>
-                        <div className={style.projectImg}>
-                            img
-                            <div className={style.projec2Button}>
-                                <button>Смотреть</button>
-                            </div>
-                        </div>
-                        <div className={style.projectInfo}>
-                            <div className={style.projectName}>
-                                Название проекта
-                            </div>
-                            <div className={style.projectDesc}>
-                                Описание
-                            </div>
-                        </div>
-                    </div>
-                    <div className={style.containerProject}>
-                        <div className={style.projectImg}>
-                            img
-                            <div className={style.projec2Button}>
-                                <button>Смотреть</button>
-                            </div>
-                        </div>
-                        <div className={style.projectInfo}>
-                            <div className={style.projectName}>
-                                Название проекта
-                            </div>
-                            <div className={style.projectDesc}>
-                                Описание
-                            </div>
-                        </div>
-                    </div>
+                    {projectsElements}
                 </div>
             </div>
         </div>

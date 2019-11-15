@@ -1,7 +1,15 @@
 import React from 'react';
 import style from './Skills.module.css';
+import Skill from "./Skill/Skill";
 
 const Skills = () => {
+    const skillsData = [
+        {id: 1, name: 'JS', desc: 'Подробное описание', icon: 'img'},
+        {id: 2, name: 'React', desc: 'Подробное описание', icon: 'img'},
+        {id: 3, name: 'Redux', desc: 'Подробное описание', icon: 'img'}
+    ];
+    const skillsElements = skillsData.map(item => <Skill name={item.name}
+                                            desc={item.desc} icon={item.icon}/>)
     return (
         <div className={style.skills}>
             <div className={style.containerSkillsInfo}>
@@ -11,50 +19,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className={style.containerSkills}>
-
-                    <div className={style.containerSkill}>
-                        <div className={style.skill}>
-                            <div className={style.skillIcon}>
-                            </div>
-                            <div className={style.skillNameContainer}>
-                                <div className={style.skillName}>
-                                    JavaScript
-                                </div>
-                            </div>
-                        </div>
-                        <div className={style.skillDesc}>
-                            Подробное описание скилла
-                        </div>
-                    </div>
-                    <div className={style.containerSkill}>
-                        <div className={style.skill}>
-                            <div className={style.skillIcon}>
-                            </div>
-                            <div className={style.skillNameContainer}>
-                                <div className={style.skillName}>
-                                    React
-                                </div>
-                            </div>
-                        </div>
-                        <div className={style.skillDesc}>
-                            Подробное описание скилла
-                        </div>
-                    </div>
-                    <div className={style.containerSkill}>
-                        <div className={style.skill}>
-                            <div className={style.skillIcon}>
-                            </div>
-                            <div className={style.skillNameContainer}>
-                                <div className={style.skillName}>
-                                    Redux
-                                </div>
-                            </div>
-                        </div>
-                        <div className={style.skillDesc}>
-                            Подробное описание скилла
-                        </div>
-                    </div>
-
+                    {skillsElements}
                 </div>
             </div>
         </div>

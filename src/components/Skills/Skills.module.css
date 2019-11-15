@@ -1,16 +1,16 @@
 .skills {
-    height: 100vh;
     display: flex;
     justify-content: center;
     background-color: #c9f2ea;
 }
 
 .containerSkillsInfo {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    border: 1px solid;
 }
 
 .containerTitle {
@@ -23,12 +23,12 @@
 .containerSkills {
     border: 1px solid;
     width: 100%;
-    height: 50%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
 }
-
 
 
 .skillDesc {
@@ -37,6 +37,7 @@
     width: 100%;
     background-color: #727272;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -45,11 +46,12 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 25%;
-    justify-content: center;
+    height: 350px;
+    width: 250px;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid;
+    margin-bottom: 20px;
 }
 
 .skill {
@@ -65,8 +67,8 @@
 .skillIcon {
     display: flex;
     background-color: #727272;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .skillNameContainer {
@@ -80,4 +82,29 @@
 
 .skillName {
     background-color: #727272;
+}
+
+@media (min-width: 768px) {
+    .skills {
+        height: 100vh;
+    }
+    .containerSkillsInfo {
+        width: 80%;
+    }
+    .containerSkills {
+        height: 80%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 0px;
+    }
+    .containerSkill {
+        width: 25%;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+    .skillIcon {
+        height: 150px;
+        width: 150px;
+    }
 }

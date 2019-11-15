@@ -6,26 +6,72 @@
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
 }
 
 .content {
     width: 100%;
-    height: 60%;
+    height: 80%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-form {
+.title {
     text-align: center;
     border: 1px solid;
-    width: 600px;
-    height: 300px;
-    background-color: #f2f2f2;
+    width: 100%;
+    height: 10%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+}
+.form input {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.form textarea {
+    width: 100%;
+    height: 30%;
+}
+
+.button button {
+    width: 150px;
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 80%;
+    }
+    .content {
+        justify-content: space-between;
+    }
+    .form {
+        width: 50%;
+        height: 60%;
+    }
+    .form input {
+        height: 15%;
+    }
+    .form textarea {
+        height: 60%;
+    }
+
 }
