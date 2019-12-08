@@ -1,7 +1,8 @@
 .skills {
     display: flex;
     justify-content: center;
-    background-color: #c9f2ea;
+    background-color: #252527;
+    padding: 30px 0;
 }
 
 .containerSkillsInfo {
@@ -12,16 +13,32 @@
     align-items: center;
     border: 1px solid;
 }
-
+.headerTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .containerTitle {
-    border: 1px solid;
     width: 100%;
-    height: 10%;
+    height: 30px;
     text-align: center;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #6ab2af;
 }
 
 .containerSkills {
-    border: 1px solid;
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,12 +47,10 @@
     padding-top: 20px;
 }
 
-
 .skillDesc {
     display: flex;
     height: 30%;
     width: 100%;
-    background-color: #727272;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -43,7 +58,6 @@
 
 
 .containerSkill {
-    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -55,7 +69,6 @@
 }
 
 .skill {
-    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -66,9 +79,10 @@
 
 .skillIcon {
     display: flex;
-    background-color: #727272;
-    width: 100px;
-    height: 100px;
+}
+.skillIcon img {
+    width: 150px;
+    height: 150px;
 }
 
 .skillNameContainer {
@@ -81,7 +95,7 @@
 }
 
 .skillName {
-    background-color: #727272;
+    margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -92,19 +106,23 @@
         width: 80%;
     }
     .containerSkills {
-        height: 80%;
+        height: 50%;
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 0px;
+        margin-bottom: 100px;
     }
     .containerSkill {
-        width: 25%;
+        width: 30%;
         height: 100%;
         margin-bottom: 0px;
     }
-    .skillIcon {
+    .skillIcon img{
         height: 150px;
         width: 150px;
+    }
+    .line {
+        margin-top: 30px;
     }
 }

@@ -8,11 +8,13 @@ const MainInfo = () => {
                 <div className={style.content}>
                     <div className={style.greeting}>
                         <span>Привет!</span>
-                        <span>Меня зовут Антон Ревта</span>
-                        <span>Я front-end разработчик</span>
+                        <span>Я Антон <span>Ревта</span></span>
+                        <h1>Я front-end разработчик</h1>
                     </div>
                     <div className={style.photo}>
-                        <img src="" alt="MyPhoto"/>
+                        <div className={style.image}>
+                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt=""/>
+                        </div>
                     </div>
                 </div>
             </div>
