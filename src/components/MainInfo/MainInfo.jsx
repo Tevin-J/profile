@@ -8,7 +8,7 @@ const MainInfo = () => {
                 <div className={style.content}>
                     <div className={style.greeting}>
                         <span>Привет!</span>
-                        <span>Я Антон <span>Ревта</span></span>
+                        <span>Я <span>Антон</span> <span>Ревта</span></span>
                         <h1>Я front-end разработчик</h1>
                     </div>
                     <div className={style.photo}>

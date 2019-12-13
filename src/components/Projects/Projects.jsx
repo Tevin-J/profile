@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Projects.module.css';
 import Project from "./Project/Project";
+import Title from "../Title/Title";
 
 const Projects = () => {
     const projectData = [
@@ -11,11 +12,8 @@ const Projects = () => {
     return (
         <div className={style.projects}>
             <div className={style.containerProjectInfo}>
-                <div className={style.containerTitle}>
-                    <div className={style.title}>
-                        Мои проекты
-                    </div>
-                </div>
+                <Title titleName='Мои проекты'/>
+                <div className={style.line}></div>
                 <div className={style.containerProjects}>
                     {projectsElements}
                 </div>

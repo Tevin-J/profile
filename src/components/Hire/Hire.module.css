@@ -1,35 +1,47 @@
 .hire {
-    background-color: #b7e2ff;
-    height: 250px;
+    background-color: #252527;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
-.container {
+.containerHire {
     width: 90%;
-    height: 60%;
-    border: 1px solid;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
-
-.button button {
-    width: 150px;
-    height: 40px;
+.line {
+    width: 100px;
+    height: 2px;
+    margin-top: 60px;
+    background-color: #6ab2af;
 }
 
-.hireText {
-    border: 1px solid;
-    width: 250px;
+@media (min-width: 356px) {
+    .line {
+        margin-top: -30px;
+    }
+}
+@media (min-width: 498px) {
+    .line {
+        margin-top: -100px;
+    }
 }
 @media (min-width: 768px) {
-    .container {
+    .containerHire {
         width: 80%;
     }
-    .hireText {
-        width: 100%;
+    .line {
+        margin-top: -100px;
+    }
+}
+@media (min-width: 983px) {
+    .line {
+        margin-top: -180px;
     }
 }

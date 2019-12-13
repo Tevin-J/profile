@@ -1,0 +1,17 @@
+.headerTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerTitle {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+

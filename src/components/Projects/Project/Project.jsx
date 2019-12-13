@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './../Projects.module.css';
+import Button from "../../Button/Button";
 
 const Project = (props) => {
 
@@ -7,9 +8,7 @@ const Project = (props) => {
         <div className={style.containerProject}>
             <div className={style.projectImg}>
                 {props.img}
-                <div className={style.projectButton}>
-                    <button>Смотреть</button>
-                </div>
+                <Button buttonName='Смотреть'/>
             </div>
             <div className={style.projectInfo}>
                 <div className={style.projectName}>
