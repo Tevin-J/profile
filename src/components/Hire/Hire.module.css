@@ -18,7 +18,7 @@
 .line {
     width: 100px;
     height: 2px;
-    margin-top: 60px;
+    margin-top: 80px;
     background-color: #6ab2af;
 }
 
@@ -37,11 +37,11 @@
         width: 80%;
     }
     .line {
-        margin-top: -100px;
+        margin-top: -90px;
     }
 }
 @media (min-width: 983px) {
     .line {
-        margin-top: -180px;
+        margin-top: -160px;
     }
 }

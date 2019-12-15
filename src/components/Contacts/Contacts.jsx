@@ -11,9 +11,9 @@ const Contacts = () => {
                 <div className={style.line}></div>
                 <div className={style.content}>
                     <div className={style.form}>
-                            <input/>
-                            <input type="text"/>
-                            <textarea/>
+                            <input type="text" placeholder='имя'/>
+                            <input type="text" placeholder='e-mail'/>
+                            <textarea placeholder='сообщение'/>
                     </div>
                     <Button buttonName='Отправить'/>
                 </div>

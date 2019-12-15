@@ -10,9 +10,7 @@ const Skill = (props) => {
                     <img src={props.icon} alt=""/>
                 </div>
                 <div className={style.skillNameContainer}>
-                    <div className={style.skillName}>
                         {props.name}
-                    </div>
                 </div>
             </div>
             <div className={style.skillDesc}>
