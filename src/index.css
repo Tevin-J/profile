@@ -19,3 +19,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.containerInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.line
+{
+  width: 100px;
+  height: 2px;
+
+  background-color: #6ab2af;
+}
+.smallText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.mediumText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 1.2;
+}

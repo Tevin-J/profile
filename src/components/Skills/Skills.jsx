@@ -2,6 +2,9 @@ import React from 'react';
 import style from './Skills.module.css';
 import Skill from "./Skill/Skill";
 import Title from "../Title/Title";
+import jsLogo from '../../assets/img/JS.png';
+import reactLogo from '../../assets/img/react.svg';
+import reduxLogo from '../../assets/img/redux.png'
 
 const Skills = () => {
     const skillsData = [
@@ -9,19 +12,19 @@ const Skills = () => {
             id: 1,
             name: 'JavaScript',
             desc: 'Подробное описание',
-            icon: 'https://www.seekclipart.com/clipng/big/110-1106837_proj4js-by-proj4js-javascript-icon-logo-png-clipart.png'
+            icon: jsLogo
         },
         {
             id: 2,
             name: 'React',
             desc: 'Подробное описание',
-            icon: 'https://cdn.worldvectorlogo.com/logos/react.svg'
+            icon: reactLogo
         },
         {
             id: 3,
             name: 'Redux',
             desc: 'Подробное описание',
-            icon: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png'
+            icon: reduxLogo
         }
     ];
     const skillsElements = skillsData.map(item => <Skill name={item.name}

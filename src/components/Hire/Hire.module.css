@@ -1,47 +1,55 @@
-.hire {
-    background-color: #252527;
-    height: 350px;
-    display: flex;
+.hire
+{
+    composes: containerInfo from '../../index.css';
     justify-content: center;
-    align-items: center;
+
+    height: 350px;
     padding: 30px 0;
+
+    background-color: #252527; 
 }
-.containerHire {
+.containerHire
+{
+    composes: containerInfo from '../../index.css';
     width: 90%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
 }
-.line {
-    width: 100px;
-    height: 2px;
+.line
+{
     margin-top: 80px;
-    background-color: #6ab2af;
+
+    composes: line from '../../index.css';
 }
 
-@media (min-width: 356px) {
-    .line {
+@media (min-width: 356px)
+{
+    .line
+    {
         margin-top: -30px;
     }
 }
-@media (min-width: 498px) {
-    .line {
-        margin-top: -100px;
+@media (min-width: 498px)
+{
+    .line
+    {
+        margin-top: -80px;
     }
 }
-@media (min-width: 768px) {
-    .containerHire {
+@media (min-width: 768px)
+{
+    .containerHire
+    {
         width: 80%;
     }
-    .line {
+    .line
+    {
         margin-top: -90px;
     }
 }
-@media (min-width: 983px) {
-    .line {
+@media (min-width: 983px)
+{
+    .line
+    {
         margin-top: -160px;
     }
 }

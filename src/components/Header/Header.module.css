@@ -1,23 +1,28 @@
-.header {
-    height: 70px;
-    background-color: #6ab2af;
+.header
+{
+    position: fixed;
+    z-index: 2;
+
     display: flex;
     justify-content: center;
-    position: fixed;
     width: 100%;
-    z-index: 2;
+    height: 70px;
+    background-color: #6ab2af;
 }
 
-.container {
-    width: 90%;
+.container
+{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
 
+    width: 90%;
 }
 
-@media (min-width: 768px) {
-    .container {
+@media (min-width: 768px)
+{
+    .container
+    {
         width: 80%;
     }
 }

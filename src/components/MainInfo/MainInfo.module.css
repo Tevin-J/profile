@@ -1,125 +1,154 @@
-.mainInfo {
-    height: 100vh; /*vh это единица измерения которая под любое устройство
-    сделает высоту/ширину во весь экран (viewheight, viewwidth)*/
-    background-color: #1f1f20;
+.mainInfo
+{
     display: flex;
     justify-content: center;
+
+    height: 600px;
     padding-top: 100px;
     padding-bottom: 30px;
+
+    background-color: #1f1f20;
 }
 
-.container {
+.container
+{
+    composes: containerInfo from '../../index.css';
+    flex-direction: row;
+
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.content {
+.content
+{
+    composes: containerInfo from '../../index.css';
+    justify-content: space-around;
+
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.greeting {
+.greeting
+{
     display: flex;
     flex-direction: column;
+
     text-align: center;
+
     color: #f2f2f2;
 }
 
-.greeting span:nth-child(2) {
+.greeting span:nth-child(2)
+{
     font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
     font-weight: 600;
     font-stretch: normal;
     line-height: 1.2;
     letter-spacing: 5px;
-    font-size: 40px;
 }
-.greeting span:nth-child(2):after {
-    content: '';
-    position: absolute;
+.greeting span:nth-child(2):after
+{   position: absolute;
+    z-index: -1;
+
+    right: 0;
+    bottom: 5px;
     width: 220px;
     height: 15px;
+
+    content: '';
     background-color: #6ab2af;
-    bottom: 5px;
-    right: 0px;
-    z-index: -1;
 }
-.greeting span:nth-child(2) span {
+.greeting span:nth-child(2) span
+{
     position: relative;
     z-index: 0;
 }
 
-.greeting span:nth-child(2) span:nth-child(2):after {
-    content: '';
-    position: absolute;
+.greeting span:nth-child(2) span:nth-child(2):after
+{   position: absolute;
+    z-index: -1;
+
+    right: 0;
+    bottom: 5px;
     width: 150px;
     height: 15px;
+
+    content: '';
     background-color: #6ab2af;
-    bottom: 5px;
-    right: 0px;
-    z-index: -1;
 }
-h1 {
+h1
+{
     font-size: 22px;
     font-weight: normal;
 }
 
-.photo {
-    margin-bottom: 90px;
-    position: relative;
+.photo
+{   position: relative;
     z-index: 0;
+
+    margin-bottom: 90px; 
 }
-.image {
+.image
+{
     width: 200px;
     height: 250px;
+
     background-color: #f2f2f2;
 }
-.image img {
+.image img
+{
     width: 200px;
     height: 250px;
 }
-.photo .image:before {
-    content: '';
-    position: absolute;
-    height: 250px;
-    width: 200px;
-    border: 4px solid #6ab2af;
+.photo .image:before
+{   position: absolute;
+    z-index: -1;
+
     bottom: 3px;
     left: 3px;
-    z-index: -1;
+    width: 200px;
+    height: 250px;
+
+    content: '';
+
+    border: 4px solid #6ab2af;
 }
-@media (min-width: 415px) {
-    .greeting span:nth-child(2) span:nth-child(1):after {
-        content: '';
-        position: absolute;
+@media (min-width: 415px)
+{
+    .greeting span:nth-child(2) span:nth-child(1):after
+    { position: absolute;
+        z-index: -1;
+
+        right: -20px;
+        bottom: 5px;
         width: 180px;
         height: 15px;
+
+        content: '';
+
         background-color: #6ab2af;
-        bottom: 5px;
-        right: -20px;
-        z-index: -1;
     }
 }
-@media (min-width: 768px) {
-    .container{
+@media (min-width: 768px)
+{
+    .container
+    {
         width: 80%;
     }
-    .content {
-        height: 60%;
-        display: flex;
+    .content
+    {   display: flex;
+        align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+
+        height: 60%; 
     }
-    .greeting {
+    .greeting
+    {
         text-align: left;
     }
-    .photo {
+    .photo
+    {
         margin-bottom: 0;
     }
 }

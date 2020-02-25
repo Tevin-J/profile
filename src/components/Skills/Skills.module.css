@@ -1,109 +1,96 @@
-.skills {
+.skills
+{
     display: flex;
     justify-content: center;
-    background-color: #252527;
+
     padding: 30px 0;
-}
 
-.containerSkillsInfo {
+    background-color: #252527;
+}
+.line
+{
+    margin-top: 60px;
+
+    composes: line from '../../index.css';
+}
+.containerSkillsInfo
+{
+    composes: containerInfo from '../../index.css';
+
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
-
-.containerSkills {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.containerSkills
+{
+    composes: containerInfo from '../../index.css';
     justify-content: space-around;
+
+    width: 100%;
     padding-top: 30px;
 }
 
-.skillDesc {
-    display: flex;
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+
+
+.containerSkill
+{
+    composes: containerInfo from '../../index.css';
+    justify-content: flex-start;
+
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skillIcon
+{
+    width: 200px;
+    height: 200px;
+}
+
+.skillNameContainer
+{
+    composes: mediumText from '../../index.css';
+
+    margin-top: 40px;
+    margin-bottom: 18px;
+    letter-spacing: 3px;
+}
+.skillDesc
+{
+    composes: smallText from '../../index.css';
+
     text-align: center;
 }
 
-
-.containerSkill {
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    width: 250px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 20px;
-    width: 100%;
-}
-
-.skillIcon {
-    display: flex;
-}
-.skillIcon img {
-    width: 150px;
-    height: 150px;
-}
-
-.skillNameContainer {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-}
-
-
-.line {
-    width: 100px;
-    height: 2px;
-    margin-top: 60px;
-    background-color: #6ab2af;
-}
-@media (min-width: 324px) {
-    .line {
+@media (min-width: 324px)
+{
+    .line
+    {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
-@media (min-width: 768px) {
-    .skills {
-        height: 100vh;
-    }
-    .containerSkillsInfo {
+@media (min-width: 768px)
+{
+    .containerSkillsInfo
+    {
         width: 80%;
     }
-    .containerSkills {
-        height: 100%;
-        width: 100%;
+    .containerSkills
+    {
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 0px;
+
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
     }
-    .containerSkill {
+    .containerSkill
+    {
         width: 30%;
         height: 300px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
-    .skillIcon img{
-        height: 150px;
-        width: 150px;
-    }
+
 }

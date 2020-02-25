@@ -1,6 +1,10 @@
 import React from 'react';
 import style from './Footer.module.css';
 import Title from "../Title/Title";
+import VKLogo from '../../assets/img/VKLogo.png';
+import githubLogo from '../../assets/img/GitHubLogo.png';
+import codewarsLogo from '../../assets/img/codewarsLogo.jpeg';
+import whattsupLogo from '../../assets/img/whattsupLogo.png'
 
 const Footer = () => {
     return (
@@ -10,10 +14,10 @@ const Footer = () => {
                 <div className={style.line}></div>
                 <div className={style.content}>
                     <div className={style.contacts}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Vk_Logo.svg/1024px-Vk_Logo.svg.png" alt="vk"/>
-                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github"/>
-                        <img src="https://www.cj-innovations.com/images/codewars.png" alt="codewars"/>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/294px-WhatsApp_logo-color-vertical.svg.png" alt="whatsapp"/>
+                        <img src={VKLogo} alt="vk"/>
+                        <img src={githubLogo} alt="github"/>
+                        <img src={codewarsLogo} alt="codewars"/>
+                        <img src={whattsupLogo} alt="whatsapp"/>
                     </div>
                     <div className={style.reserve}>
                         © 2019 Все права защищены

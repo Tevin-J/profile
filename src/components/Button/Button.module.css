@@ -1,5 +1,22 @@
-button {
-    height: 50px;
+button
+{
     width: 130px;
-    background-color: #6ab2af
+    height: 50px;
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #6ab2af;
+    border: solid 2px #6ab2af;
+    border-radius: 3px;
+    transition: .4s;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+
+}
+button:hover{
+    background: #6ab2af;
+    color: black;
 }

@@ -2,16 +2,18 @@ import React from 'react';
 import style from './../Skills.module.css';
 
 const Skill = (props) => {
-
+    const skillIconStyle = {
+        backgroundImage: 'url(' + props.icon + ')',
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
+    }
     return (
         <div className={style.containerSkill}>
-            <div className={style.skill}>
-                <div className={style.skillIcon}>
-                    <img src={props.icon} alt=""/>
-                </div>
-                <div className={style.skillNameContainer}>
-                        {props.name}
-                </div>
+            <div style={skillIconStyle} className={style.skillIcon}>
+            </div>
+            <div className={style.skillNameContainer}>
+                {props.name}
             </div>
             <div className={style.skillDesc}>
                 {props.desc}

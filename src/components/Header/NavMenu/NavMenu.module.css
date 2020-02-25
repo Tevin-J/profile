@@ -1,16 +1,26 @@
-.navMenu {
-    width: 100%;
+.navMenu
+{
     display: flex;
     justify-content: space-between;
+    composes: mediumText from '../../../index.css';
+    width: 100%; 
 }
 
-.navMenu a {
+.navMenu a
+{
     text-decoration: none;
     color: black;
-}
 
-@media (min-width: 768px) {
-    .navMenu {
+    transition: .4s;
+}
+.navMenu a:hover{
+    background: #6ab2af;
+    color: white;
+}
+@media (min-width: 768px)
+{
+    .navMenu
+    {
         width: 400px;
     }
 }
