@@ -7,7 +7,7 @@ const Title = (props) => {
             <h2 className={style.containerTitle}>
                 {props.titleName}
             </h2>
-
+            <div className={style.line}></div>
         </div>
     )
 }

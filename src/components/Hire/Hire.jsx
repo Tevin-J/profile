@@ -8,7 +8,6 @@ const Hire = () => {
         <div className={style.hire}>
             <div className={style.containerHire}>
                 <Title titleName='Ищу работу в Краснодаре || Сочи'/>
-                <div className={style.line}></div>
                 <Button buttonName='Нанять меня!'/>
             </div>
         </div>

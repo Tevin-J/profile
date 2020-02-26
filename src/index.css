@@ -35,13 +35,13 @@ code {
 .smallText {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 .mediumText {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   font-stretch: normal;
   line-height: 1.2;
 }

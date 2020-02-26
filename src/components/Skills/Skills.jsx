@@ -10,15 +10,15 @@ const Skills = () => {
     const skillsData = [
         {
             id: 1,
-            name: 'JavaScript',
-            desc: 'Подробное описание',
-            icon: jsLogo
-        },
-        {
-            id: 2,
             name: 'React',
             desc: 'Подробное описание',
             icon: reactLogo
+        },
+        {
+            id: 2,
+            name: 'JavaScript',
+            desc: 'Подробное описание',
+            icon: jsLogo
         },
         {
             id: 3,
@@ -33,7 +33,6 @@ const Skills = () => {
         <div className={style.skills}>
             <div className={style.containerSkillsInfo}>
                 <Title titleName='Мои Навыки'/>
-                <div className={style.line}></div>
                 <div className={style.containerSkills}>
                     {skillsElements}
                 </div>

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 .containerTitle {
     font-family: 'Montserrat', sans-serif;
@@ -10,9 +11,16 @@
     line-height: 1.2;
 
     width: 100%;
-    height: 30px;
+
     text-align: center;
     letter-spacing: 5px;
     text-transform: capitalize;
+
+    margin: 0px;
 }
 
+.line
+{
+    composes: line from '../../index.css';
+    margin-top: 40px;
+}

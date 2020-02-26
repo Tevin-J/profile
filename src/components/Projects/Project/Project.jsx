@@ -6,26 +6,20 @@ const Project = (props) => {
     const ProjectImgStyle = {
         backgroundImage: 'url(' + props.img + ')',
         backgroundPosition: 'center',
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
     }
     return (
         <div className={style.containerProject}>
-            <div className={style.containerProjectImg}>
-                <div style={ProjectImgStyle} className={style.projectImg} >
-                    <div className={style.containerProjectButton}>
-                        <Button buttonName='cмотреть'/>
-                    </div>
-                </div>
+            <div style={ProjectImgStyle} className={style.projectImg} >
+                <Button buttonName='cмотреть'/>
             </div>
-            <div className={style.projectInfo}>
-                <div className={style.projectName}>
-                    {props.name}
-                </div>
-                <div className={style.projectDesc}>
-                    {props.desc}
-                </div>
-            </div>
+            <span className={style.projectName}>
+                {props.name}
+            </span>
+            <span className={style.projectDesc}>
+                {props.desc}
+            </span>
         </div>
     )
 }
