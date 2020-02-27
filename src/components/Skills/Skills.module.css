@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 
-    padding: 100px;
+    padding: 100px 0;
 
     background-color: #252527;
 }
@@ -20,7 +20,7 @@
     composes: containerInfo from '../../index.css';
     justify-content: space-around;
 
-    width: 100%;
+    width: 80%;
 
 }
 
@@ -39,17 +39,12 @@
     height: 200px;
     width: 200px;
 }
-.skillIcon:hover
-{
-    height: 250px;
-    width: 250px;
-}
 .skillNameContainer
 {
     composes: mediumText from '../../index.css';
     letter-spacing: 3px;
 
-    margin-top: 16px;
+    margin-top: 30px;
     margin-bottom: 18px;
 
 }
@@ -80,11 +75,17 @@
     .containerSkill
     {
         width: 30%;
-        height: 300px;
         margin-bottom: 0;
     }
-    .skillIcon img
+    .skillIcon
     {
-        height: 150px;
+        height: 130px;
+    }
+}
+@media (min-width: 1270px)
+{
+    .skillIcon
+    {
+        height: 180px;
     }
 }

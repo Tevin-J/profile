@@ -2,25 +2,40 @@ import React from 'react';
 import style from './../Projects.module.css';
 import Button from "../../Button/Button";
 
-const Project = (props) => {
-    const ProjectImgStyle = {
-        backgroundImage: 'url(' + props.img + ')',
+class Project extends React.Component {
+    state = {
+        isFocus: false
+    }
+    makeIsFocusTrue = () => {
+        this.setState({isFocus: true})
+    }
+    makeIsFocusFalse = () => {
+        this.setState({isFocus: false})
+    }
+    ProjectImgStyle = {
+        backgroundImage: 'url(' + this.props.img + ')',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
     }
-    return (
-        <div className={style.containerProject}>
-            <div style={ProjectImgStyle} className={style.projectImg} >
-                <Button buttonName='cмотреть'/>
+    render = () => {
+        return (
+            <div className={style.containerProject}>
+                <div style={this.ProjectImgStyle} className={style.projectImg} onMouseEnter={this.makeIsFocusTrue}
+                     onMouseLeave={this.makeIsFocusFalse}>
+                    {this.state.isFocus ? <Button buttonName='cмотреть'/> : ''}
+                </div>
+                <div className={style.projectInfo}>
+                <span className={style.projectName}>
+                {this.props.name}
+                </span>
+                    <span className={style.projectDesc} >
+                {this.props.desc}
+                </span>
+                </div>
             </div>
-            <span className={style.projectName}>
-                {props.name}
-            </span>
-            <span className={style.projectDesc}>
-                {props.desc}
-            </span>
-        </div>
-    )
+        )
+    }
+
 }
 export default Project;

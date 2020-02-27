@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 
-    height: 500px;
+    height: 400px;
     padding: 100px 0;
     background-color: #252527;
 }
@@ -12,26 +12,10 @@
 {
     composes: containerInfo from '../../index.css';
     width: 90%;
-}
-
-.content
-{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-
-    width: 100%;
-    height: 80%;
-    margin-top: 100px;
-}
-
-.title
-{
-    width: 100%;
-    height: 10%;
-
-    text-align: center; 
 }
 
 .contacts
@@ -58,11 +42,14 @@
     composes: smallText from '../../index.css';
 
     text-align: center;
-
 }
 
 @media (min-width: 768px)
 {
+    .footer
+    {
+        height: 500px;
+    }
     .containerFooter
     {
         width: 80%;
@@ -70,11 +57,17 @@
     .contacts
     {
         justify-content: space-between;
-        width: 75%;
+        width: 60%;
     }
     img
     {
         width: 100px;
         height: 100px;
+    }
+}
+@media (min-width: 1024px) {
+    .contacts
+    {
+        width: 50%;
     }
 }

@@ -11,16 +11,14 @@ const Footer = () => {
         <div className={style.footer}>
             <div className={style.containerFooter}>
                 <Title titleName='Антон Ревта'/>
-                <div className={style.content}>
-                    <div className={style.contacts}>
-                        <img src={VKLogo} alt="vk"/>
-                        <img src={githubLogo} alt="github"/>
-                        <img src={codewarsLogo} alt="codewars"/>
-                        <img src={whattsupLogo} alt="whatsapp"/>
-                    </div>
-                    <div className={style.reserve}>
-                        © 2020 Все права защищены
-                    </div>
+                <div className={style.contacts}>
+                    <img src={VKLogo} alt="vk"/>
+                    <img src={githubLogo} alt="github"/>
+                    <img src={codewarsLogo} alt="codewars"/>
+                    <img src={whattsupLogo} alt="whatsapp"/>
+                </div>
+                <div className={style.reserve}>
+                    © 2020 Все права защищены
                 </div>
             </div>
         </div>

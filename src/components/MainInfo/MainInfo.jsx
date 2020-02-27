@@ -8,8 +8,8 @@ const MainInfo = () => {
             <div className={style.container}>
                 <div className={style.content}>
                     <div className={style.greeting}>
-                        <span>Привет!</span>
-                        <span>Я <span>Антон</span> <span>Ревта</span></span>
+                        <span className={style.hi}>Привет!</span>
+                        <span>Я <span className={style.name}>Антон</span> <span>Ревта</span></span>
                         <h1>Я front-end разработчик</h1>
                     </div>
                     <div className={style.photo}>
