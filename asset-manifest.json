@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e61445f7.chunk.css",
+    "main.css": "/portfolio/static/css/main.04d7271d.chunk.css",
     "main.js": "/portfolio/static/js/main.127e2497.chunk.js",
     "main.js.map": "/portfolio/static/js/main.127e2497.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2d26bf14.js",
@@ -8,9 +8,9 @@
     "static/js/2.504824e8.chunk.js": "/portfolio/static/js/2.504824e8.chunk.js",
     "static/js/2.504824e8.chunk.js.map": "/portfolio/static/js/2.504824e8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.80740eae8276441b4f11a67d2f912b39.js": "/portfolio/precache-manifest.80740eae8276441b4f11a67d2f912b39.js",
+    "precache-manifest.f5c5da4a3855280cdff303fec3afcb55.js": "/portfolio/precache-manifest.f5c5da4a3855280cdff303fec3afcb55.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.e61445f7.chunk.css.map": "/portfolio/static/css/main.e61445f7.chunk.css.map",
+    "static/css/main.04d7271d.chunk.css.map": "/portfolio/static/css/main.04d7271d.chunk.css.map",
     "static/media/VKLogo.png": "/portfolio/static/media/VKLogo.c3e11f91.png",
     "static/media/codewarsLogo.jpeg": "/portfolio/static/media/codewarsLogo.bc141673.jpeg",
     "static/media/counter.png": "/portfolio/static/media/counter.084d1a96.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.2d26bf14.js",
     "static/js/2.504824e8.chunk.js",
-    "static/css/main.e61445f7.chunk.css",
+    "static/css/main.04d7271d.chunk.css",
     "static/js/main.127e2497.chunk.js"
   ]
 }
