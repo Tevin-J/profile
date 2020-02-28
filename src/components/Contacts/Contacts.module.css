@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
 
-
     padding: 100px 0;
 
     background-color: #1f1f20;
@@ -34,6 +33,20 @@
     width: 100%;
     height: 30px;
     margin-bottom: 20px;
+    text-indent: 20px;
+
+    border: 0;
+    color: #f2f2f2;
+    background-color: #252527;
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.form input:focus{
+    border: #6ab2af 1px solid;
 }
 
 .form textarea
@@ -41,8 +54,22 @@
     width: 100%;
     height: 200px;
     margin-bottom: 50px;
-}
+    text-indent: 20px;
+    padding-top: 10px;
 
+    border: 0;
+    background-color: #252527;
+    color: #f2f2f2;
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.form textarea:focus{
+    border: #6ab2af 1px solid;
+}
 @media (min-width: 768px)
 {
     .contacts

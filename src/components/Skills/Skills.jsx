@@ -2,9 +2,9 @@ import React from 'react';
 import style from './Skills.module.css';
 import Skill from "./Skill/Skill";
 import Title from "../Title/Title";
-import jsLogo from '../../assets/img/JS.png';
+import jsLogo from '../../assets/img/js.svg';
 import reactLogo from '../../assets/img/react.svg';
-import reduxLogo from '../../assets/img/redux.png'
+import reduxLogo from '../../assets/img/redux.svg'
 
 const Skills = () => {
     const skillsData = [
@@ -32,7 +32,7 @@ const Skills = () => {
     return (
         <div className={style.skills}>
             <div className={style.containerSkillsInfo}>
-                <Title titleName='Мои Навыки'/>
+                <Title titleName='Мои навыки'/>
                 <div className={style.containerSkills}>
                     {skillsElements}
                 </div>

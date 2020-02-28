@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './Footer.module.css';
 import Title from "../Title/Title";
-import VKLogo from '../../assets/img/VKLogo.png';
-import githubLogo from '../../assets/img/GitHubLogo.png';
-import codewarsLogo from '../../assets/img/codewarsLogo.jpeg';
-import whattsupLogo from '../../assets/img/whattsupLogo.png'
+import VKLogo from '../../assets/img/vk.svg';
+import githubLogo from '../../assets/img/github.svg';
+import telegramLogo from '../../assets/img/telegram.svg';
+import whattsupLogo from '../../assets/img/whatsapp.svg'
 
 const Footer = () => {
     return (
@@ -12,10 +12,18 @@ const Footer = () => {
             <div className={style.containerFooter}>
                 <Title titleName='Антон Ревта'/>
                 <div className={style.contacts}>
-                    <img src={VKLogo} alt="vk"/>
-                    <img src={githubLogo} alt="github"/>
-                    <img src={codewarsLogo} alt="codewars"/>
-                    <img src={whattsupLogo} alt="whatsapp"/>
+                    <div className={style.skillIcon}>
+                        <img src={VKLogo} alt="vk"/>
+                    </div>
+                    <div className={style.skillIcon}>
+                        <img src={whattsupLogo} alt="whatsapp"/>
+                    </div>
+                    <div className={style.skillIcon}>
+                        <img src={telegramLogo} alt="telegram"/>
+                    </div>
+                    <div className={style.skillIcon}>
+                        <img src={githubLogo} alt="github"/>
+                    </div>
                 </div>
                 <div className={style.reserve}>
                     © 2020 Все права защищены

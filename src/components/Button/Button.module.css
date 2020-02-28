@@ -10,11 +10,12 @@ button
     border-radius: 3px;
     transition: .4s;
 
+    outline: none;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
-
 }
 button:hover{
     background: #6ab2af;
