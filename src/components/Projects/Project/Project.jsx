@@ -3,7 +3,7 @@ import style from './../Projects.module.css';
 import Button from "../../Button/Button";
 
 class Project extends React.Component {
-    state = {
+    /*state = {
         isFocus: false
     }
     makeIsFocusTrue = () => {
@@ -11,7 +11,7 @@ class Project extends React.Component {
     }
     makeIsFocusFalse = () => {
         this.setState({isFocus: false})
-    }
+    }*/
     ProjectImgStyle = {
         backgroundImage: 'url(' + this.props.img + ')',
         backgroundPosition: 'center',
@@ -23,7 +23,9 @@ class Project extends React.Component {
             <div className={style.containerProject}>
                 <div style={this.ProjectImgStyle} className={style.projectImg} onMouseEnter={this.makeIsFocusTrue}
                      onMouseLeave={this.makeIsFocusFalse}>
-                    {this.state.isFocus ? <Button buttonName='cмотреть'/> : ''}
+                    <div className={style.projectButton}>
+                        <Button buttonName='cмотреть'/>
+                    </div>
                 </div>
                 <div className={style.projectInfo}>
                 <span className={style.projectName}>

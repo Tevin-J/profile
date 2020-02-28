@@ -50,12 +50,10 @@
 .projectImg:before {
     right: 0;
     top: 0;
-    z-index: 2;
 }
 .projectImg:after {
     left: 0;
     top: 0;
-    z-index: 2;
 }
 .projectImg:hover:before {
     right: 0;
@@ -79,14 +77,11 @@
     transition: all 0.5s;
     -webkit-transition-delay: 0.25s;
     transition-delay: 0.25s;
+    z-index: 2;
 }
 .projectButton
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
+    visibility: visible;
 }
 .projectInfo {
     display: flex;
@@ -147,4 +142,16 @@
     {
         width: 500px;
     }
+    .projectButton
+    {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .projectImg:hover .projectButton {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.4s;
+    }
 }
+

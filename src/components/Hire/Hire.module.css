@@ -11,10 +11,9 @@
 {
     composes: containerInfo from '../../index.css';
     width: 90%;
-    height: 400px;
+    height: 350px;
 
 }
-
 
 
 @media (min-width: 768px)
@@ -22,7 +21,14 @@
     .containerHire
     {
         width: 80%;
-        height: 300px;
+        height: 250px;
+    }
+}
+@media (min-width: 1024px)
+{
+    .containerHire
+    {
+        height: 230px;
     }
 }
 

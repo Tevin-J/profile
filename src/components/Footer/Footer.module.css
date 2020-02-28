@@ -37,14 +37,17 @@
     align-items: center;
     transform: rotate(45deg);
     transition: .4s;
+    transition-delay: 0.25s;
 }
 .skillIcon:hover{
     transform: rotate(90deg);
     transition: .4s;
+    transition-delay: 0.25s;
 }
 .skillIcon:hover img{
     transform: rotate(-90deg);
     transition: .4s;
+    transition-delay: 0.25s;
 }
 .skillIcon img
 {
@@ -52,6 +55,7 @@
     height: 30px;
     transform: rotate(-45deg);
     transition: .4s;
+    transition-delay: 0.25s;
 }
 
 .reserve
