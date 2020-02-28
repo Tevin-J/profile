@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "624a5a7ba0fa559fe01afcea8ab1f90c",
+    "revision": "a8e5a25d00bd917401ab7e2fc30db3cf",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "90ef030d2a3f331b7dca",
-    "url": "/portfolio/static/css/main.f382b0fc.chunk.css"
+    "revision": "0bd1bd0d1d46c020d721",
+    "url": "/portfolio/static/css/main.10330131.chunk.css"
   },
   {
     "revision": "1215ee77d277d559f050",
     "url": "/portfolio/static/js/2.504824e8.chunk.js"
   },
   {
-    "revision": "90ef030d2a3f331b7dca",
-    "url": "/portfolio/static/js/main.8e477d66.chunk.js"
+    "revision": "0bd1bd0d1d46c020d721",
+    "url": "/portfolio/static/js/main.8f3e3773.chunk.js"
   },
   {
     "revision": "a4cc746e3e9374b39785",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/counter.084d1a96.png"
   },
   {
-    "revision": "a112a001d5170d13d5f46d9387e526a4",
-    "url": "/portfolio/static/media/github.a112a001.svg"
+    "revision": "78d42e1930d2d5e6d7feb776931015b5",
+    "url": "/portfolio/static/media/github.78d42e19.svg"
   },
   {
     "revision": "2d2e31cc63a96c7e6044f52d30fd21b9",
@@ -48,15 +48,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/social-network.5c59a405.PNG"
   },
   {
-    "revision": "3404a7961ab596142ce28c1900e595cc",
-    "url": "/portfolio/static/media/telegram.3404a796.svg"
+    "revision": "0961ecaa11384823d41b4f81451a49e5",
+    "url": "/portfolio/static/media/telegram.0961ecaa.svg"
   },
   {
-    "revision": "d4b26e2e5961b69171b7ef3a03b802ba",
-    "url": "/portfolio/static/media/vk.d4b26e2e.svg"
+    "revision": "dfb860c984552b505b072fce1ccb8d97",
+    "url": "/portfolio/static/media/vk.dfb860c9.svg"
   },
   {
-    "revision": "eca057824a1cbf642c7bfe892aa4ae5a",
-    "url": "/portfolio/static/media/whatsapp.eca05782.svg"
+    "revision": "0f6375cefc12870f56c79e685561d468",
+    "url": "/portfolio/static/media/whatsapp.0f6375ce.svg"
   }
 ]);
