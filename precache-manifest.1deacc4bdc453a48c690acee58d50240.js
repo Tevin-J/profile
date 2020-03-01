@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a89441323328e06eb5a07c1a513992e8",
+    "revision": "654eefe3023153828558ddebb1dc837c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "244d1123214e9802cf43",
-    "url": "/portfolio/static/css/main.12abe4c7.chunk.css"
+    "revision": "89964f73b44de1a6133c",
+    "url": "/portfolio/static/css/main.0ccad0cb.chunk.css"
   },
   {
-    "revision": "1215ee77d277d559f050",
-    "url": "/portfolio/static/js/2.504824e8.chunk.js"
+    "revision": "8ba96dea13e06abf191e",
+    "url": "/portfolio/static/js/2.193d07d8.chunk.js"
   },
   {
-    "revision": "244d1123214e9802cf43",
-    "url": "/portfolio/static/js/main.8f3e3773.chunk.js"
+    "revision": "89964f73b44de1a6133c",
+    "url": "/portfolio/static/js/main.145071c8.chunk.js"
   },
   {
     "revision": "a4cc746e3e9374b39785",
@@ -56,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/vk.dfb860c9.svg"
   },
   {
-    "revision": "0f6375cefc12870f56c79e685561d468",
-    "url": "/portfolio/static/media/whatsapp.0f6375ce.svg"
+    "revision": "c92ccfd84f3bb1bbe8d20f8512429aa2",
+    "url": "/portfolio/static/media/whatsapp.c92ccfd8.svg"
   }
 ]);
