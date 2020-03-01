@@ -209,12 +209,12 @@ h1
     .greeting span:nth-child(2):after
     {
         right: 0px;
-        width: 195px;
+        width: 200px;
     }
     .greeting span:nth-child(1):after
     {
-        right: -10px;
-        width: 208px;
+        right: 0px;
+        width: 196px;
     }
     .greeting span:nth-child(2):hover :after
     {
