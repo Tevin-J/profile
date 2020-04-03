@@ -4,7 +4,8 @@ import Skill from "./Skill/Skill";
 import Title from "../Title/Title";
 import jsLogo from '../../assets/img/js.svg';
 import reactLogo from '../../assets/img/react.svg';
-import reduxLogo from '../../assets/img/redux.svg'
+import reduxLogo from '../../assets/img/redux.svg';
+import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
     const skillsData = [
@@ -30,12 +31,14 @@ const Skills = () => {
     const skillsElements = skillsData.map(item => <Skill name={item.name}
                                                          desc={item.desc} icon={item.icon}/>)
     return (
-        <div className={style.skills}>
+        <div className={style.skills} id={'skills'}>
             <div className={style.containerSkillsInfo}>
                 <Title titleName='Мои навыки'/>
-                <div className={style.containerSkills}>
-                    {skillsElements}
-                </div>
+                <Fade>
+                    <div className={style.containerSkills}>
+                        {skillsElements}
+                    </div>
+                </Fade>
             </div>
         </div>
 

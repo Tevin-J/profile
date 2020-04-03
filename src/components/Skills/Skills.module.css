@@ -6,6 +6,8 @@
     padding: 100px 0;
 
     background-color: #252527;
+
+    position: relative;
 }
 
 .containerSkillsInfo
@@ -21,7 +23,6 @@
     justify-content: space-around;
 
     width: 80%;
-
 }
 
 .containerSkill

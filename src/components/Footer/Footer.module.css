@@ -6,6 +6,8 @@
     height: 400px;
     padding: 100px 0;
     background-color: #252527;
+
+    position: relative;
 }
 
 .containerFooter
@@ -43,6 +45,7 @@
     transform: rotate(90deg);
     transition: .4s;
     transition-delay: 0.25s;
+    box-shadow: 0 0 20px #6ab2af;
 }
 .skillIcon:hover img{
     transform: rotate(-90deg);

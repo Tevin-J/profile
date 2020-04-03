@@ -6,6 +6,8 @@
     padding: 100px 0;
 
     background-color: #1f1f20;
+
+    position: relative;
 }
 
 .containerContacts
@@ -44,9 +46,12 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
+
+    transition: 0.5s;
 }
 .form input:focus{
-    border: #6ab2af 1px solid;
+    box-shadow: 0 0 20px #6ab2af;
+    transition: 0.5s;
 }
 
 .form textarea
@@ -66,9 +71,14 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
+
+    transition: 0.5s;
+
+    resize: none;
 }
 .form textarea:focus{
-    border: #6ab2af 1px solid;
+    box-shadow: 0 0 20px #6ab2af;
+    transition: 0.5s;
 }
 @media (min-width: 768px)
 {

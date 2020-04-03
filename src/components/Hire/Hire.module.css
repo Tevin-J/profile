@@ -5,14 +5,15 @@
 
     padding: 100px 0;
 
-    background-color: #252527; 
+    background-color: #252527;
+
+    position: relative;
 }
 .containerHire
 {
     composes: containerInfo from '../../index.css';
     width: 90%;
     height: 350px;
-
 }
 
 
