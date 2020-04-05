@@ -9,10 +9,10 @@ import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
     return (
-        <div className={style.footer} id={'footer'}>
+        <div className={style.footer}>
             <div className={style.containerFooter}>
-                <Title titleName='Антон Ревта'/>
                 <Fade>
+                    <Title titleName='Антон Ревта'/>
                     <div className={style.contacts}>
                         <div className={style.skillIcon}>
                             <img src={VKLogo} alt="vk"/>

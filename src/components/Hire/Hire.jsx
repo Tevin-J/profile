@@ -8,8 +8,8 @@ const Hire = () => {
     return (
         <div className={style.hire}>
             <div className={style.containerHire}>
-                <Title titleName='Ищу работу в Краснодаре || Сочи'/>
                 <Fade>
+                    <Title titleName='Ищу работу в Краснодаре || Сочи'/>
                     <Button buttonName='Откликнуться'/>
                 </Fade>
             </div>

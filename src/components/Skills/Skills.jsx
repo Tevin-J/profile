@@ -33,8 +33,8 @@ const Skills = () => {
     return (
         <div className={style.skills} id={'skills'}>
             <div className={style.containerSkillsInfo}>
-                <Title titleName='Мои навыки'/>
                 <Fade>
+                    <Title titleName='Мои навыки'/>
                     <div className={style.containerSkills}>
                         {skillsElements}
                     </div>
