@@ -11,7 +11,7 @@ const maxLength50 = maxLengthCreator(50)
 const minLength5 = minLengthCreator(5)
 const ContactsForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit} className={style.f}>
+        <form onSubmit={props.handleSubmit} className={style.flexform}>
             <Field component={Input} name={'name'} placeholder='Ваше имя, название компании'
                    validate={[requiredField, maxLength50, minLength5]}/>
             <Field component={Input} name={'email'} placeholder='E-mail'
@@ -35,7 +35,9 @@ const Contacts = (props) => {
             <div className={style.containerContacts}>
                 <Fade>
                     <Title titleName='Свяжитесь со мной'/>
-                    <ContactsReduxForm onSubmit={sendForm}/>
+                    <div className={style.f}>
+                        <ContactsReduxForm onSubmit={sendForm}/>
+                    </div>
                 </Fade>
             </div>
         </div>

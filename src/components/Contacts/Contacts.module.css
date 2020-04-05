@@ -55,6 +55,7 @@
 }
 .textareaForm {
     margin-bottom: 50px;
+    width: 100%;
 }
 .form textarea
 {
@@ -91,11 +92,16 @@
     color: red;
 }
 .f {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     margin-top: 50px;
+    width: 100%;
 }
+.flexform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 768px)
 {
     .contacts
