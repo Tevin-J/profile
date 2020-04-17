@@ -3,17 +3,17 @@ import style from './Contacts.module.css';
 import Title from "../Title/Title";
 import Button from "../Button/Button";
 import Fade from 'react-reveal/Fade';
-import {Field, reduxForm} from "redux-form";
-import {maxLengthCreator, minLengthCreator, requiredField} from "../../utilits/validators";
+import {Field, reduxForm, reset} from "redux-form";
+import {requiredField} from "../../utilits/validators";
 import {Input, Textarea} from "../../common/FormsControls/FormsControls";
+import * as axios from "axios";
+import {connect} from "react-redux";
 
-const maxLength50 = maxLengthCreator(50)
-const minLength5 = minLengthCreator(5)
 const ContactsForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit} className={style.flexform}>
             <Field component={Input} name={'name'} placeholder='Ваше имя, название компании'
-                   validate={[requiredField, maxLength50, minLength5]}/>
+                   validate={[requiredField]}/>
             <Field component={Input} name={'email'} placeholder='E-mail'
                    validate={[requiredField]}/>
             <Field component={Textarea} name={'message'} placeholder='Сообщение'
@@ -25,10 +25,12 @@ const ContactsForm = (props) => {
 const ContactsReduxForm = reduxForm({
     form: 'contacts'
 })(ContactsForm)
+
 const Contacts = (props) => {
+
     const sendForm = (formData) => {
-        console.log(formData.name, formData.email, formData.message)
-        /*api.sendForm(formData.name, formData.email, formData.message)*/
+        axios.post('http://localhost:3010/sendMessage', formData)
+        props.clearForm()
     }
     return (
         <div className={style.contacts} id={'contacts'}>
@@ -44,4 +46,14 @@ const Contacts = (props) => {
     )
 }
 
-export default Contacts;
+
+let mdtp = (dispatch) => {
+    return {
+        clearForm: () => {
+            dispatch(reset('contacts'))
+        }
+    }
+}
+
+
+export default connect(null, mdtp)(Contacts);
