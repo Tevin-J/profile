@@ -46,6 +46,7 @@
     transition: .4s;
     transition-delay: 0.25s;
     box-shadow: 0 0 20px #6ab2af;
+    cursor: pointer;
 }
 .skillIcon:hover img{
     transform: rotate(-90deg);

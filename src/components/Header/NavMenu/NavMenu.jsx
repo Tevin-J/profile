@@ -2,18 +2,19 @@ import React from 'react';
 import style from './NavMenu.module.css';
 import {Link, animateScroll} from "react-scroll";
 
+
 const NavMenu = () => {
     return (
         <div className={style.navMenu}>
-                <a onClick={animateScroll.scrollToTop} className={style.link}>Главная</a>
+                <span onClick={animateScroll.scrollToTop} className={style.link}>Главная</span>
             <Link to="skills" spy={true} smooth={true} duration={1000}>
-                <a className={style.link}>Навыки</a>
+                <span className={style.link}>Навыки</span>
             </Link>
             <Link to="projects" spy={true} smooth={true} duration={1000}>
-                <a className={style.link}>Проекты</a>
+                <span className={style.link}>Проекты</span>
             </Link>
             <Link to="contacts" spy={true} smooth={true} duration={1000}>
-                <a className={style.link}>Контакты</a>
+                <span className={style.link}>Контакты</span>
             </Link>
         </div>
     )

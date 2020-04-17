@@ -11,7 +11,8 @@ const Projects = () => {
         {id: 1, name: 'Социальная сеть', desc: 'Написана на React', img: socialNetwork},
         {id: 2, name: 'Счетчик', desc: 'Написан на React', img: counter}
     ];
-    const projectsElements = projectData.map(title => <Project name={title.name} desc={title.desc} img={title.img}/>)
+    const projectsElements = projectData.map(title => <Project name={title.name} desc={title.desc} img={title.img}
+                                                        key={title.id}/>)
     return (
         <div className={style.projects} id={'projects'}>
             <div className={style.containerProjectInfo}>

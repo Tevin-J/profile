@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.navMenu a
+.navMenu span
 {
     text-decoration: none;
     color: black;
@@ -16,9 +16,10 @@
     transition: .4s;
 
 }
-.navMenu a:hover{
+.navMenu span:hover{
     background: #6ab2af;
     color: white;
+    cursor: pointer;
 }
 
 @media (min-width: 768px)
@@ -27,7 +28,7 @@
     {
         width: 400px;
     }
-    .navMenu a
+    .navMenu span
     {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
@@ -43,7 +44,7 @@
     {
         width: 500px;
     }
-    .navMenu a
+    .navMenu span
     {
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
