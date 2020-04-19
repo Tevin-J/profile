@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 import Button from "../Button/Button";
 import Fade from 'react-reveal/Fade';
 import {Field, reduxForm, reset} from "redux-form";
-import {requiredField} from "../../utilits/validators";
+import {emailValidator, requiredField} from "../../utilits/validators";
 import {Input, Textarea} from "../../common/FormsControls/FormsControls";
 import * as axios from "axios";
 import {connect} from "react-redux";
@@ -15,7 +15,7 @@ const ContactsForm = (props) => {
             <Field component={Input} name={'name'} placeholder='Ваше имя, название компании'
                    validate={[requiredField]}/>
             <Field component={Input} name={'email'} placeholder='E-mail'
-                   validate={[requiredField]}/>
+                   validate={[requiredField, emailValidator]}/>
             <Field component={Textarea} name={'message'} placeholder='Сообщение'
                    validate={[requiredField]}/>
             <Button buttonName='Отправить'/>

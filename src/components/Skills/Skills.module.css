@@ -21,7 +21,6 @@
 {
     composes: containerInfo from '../../index.css';
     justify-content: space-around;
-
     width: 80%;
 }
 
@@ -31,8 +30,6 @@
     justify-content: flex-start;
 
     width: 250px;
-
-    margin-top: 50px;
 }
 
 .skillIcon
@@ -66,16 +63,17 @@
     }
     .containerSkills
     {
-        flex-direction: row;
-        justify-content: space-between;
-
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
         width: 100%;
         height: 100%;
         padding-top: 0;
+        border: 1px solid;
     }
     .containerSkill
     {
-        width: 30%;
+        height: 100%;
+        width: 100%;
         margin-bottom: 0;
     }
     .skillIcon
