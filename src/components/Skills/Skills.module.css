@@ -19,9 +19,11 @@
 
 .containerSkills
 {
-    composes: containerInfo from '../../index.css';
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
     width: 80%;
+    border: 1px solid;
 }
 
 .containerSkill
@@ -29,7 +31,7 @@
     composes: containerInfo from '../../index.css';
     justify-content: flex-start;
 
-    width: 250px;
+    width: 100%;
 }
 
 .skillIcon
@@ -63,8 +65,7 @@
     }
     .containerSkills
     {
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height: 100%;
         padding-top: 0;
@@ -83,6 +84,10 @@
 }
 @media (min-width: 1270px)
 {
+    .containerSkills
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .skillIcon
     {
         height: 180px;
