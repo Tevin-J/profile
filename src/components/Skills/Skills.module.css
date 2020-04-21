@@ -23,7 +23,6 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
     width: 80%;
-    border: 1px solid;
 }
 
 .containerSkill
@@ -53,7 +52,6 @@
     composes: smallText from '../../index.css';
 
     text-align: center;
-
 }
 
 
@@ -69,7 +67,6 @@
         width: 100%;
         height: 100%;
         padding-top: 0;
-        border: 1px solid;
     }
     .containerSkill
     {

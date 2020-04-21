@@ -11,7 +11,7 @@ const Projects = () => {
     const projectData = [
         {id: 1, name: 'Социальная сеть', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', img: socialNetwork},
         {id: 2, name: 'Счетчик', desc: 'Написан на React', img: counter},
-        {id: 3, name: 'Сайт услуг по установке балконов', desc: 'Написан на чистом JS', img: balcony}
+        {id: 3, name: 'Лендинг на чистом JS', desc: 'Написан на чистом JS', img: balcony}
     ];
     const projectsElements = projectData.map(title => <Project name={title.name} desc={title.desc} img={title.img}
                                                         key={title.id}/>)

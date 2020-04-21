@@ -46,7 +46,6 @@ const Contacts = (props) => {
     )
 }
 
-
 let mdtp = (dispatch) => {
     return {
         clearForm: () => {

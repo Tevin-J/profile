@@ -12,18 +12,20 @@ const Project = (props) => {
     }
         return (
             <div className={style.containerProject}>
-                <div style={ProjectImgStyle} className={style.projectImg}>
-                    <div className={style.projectButton}>
-                        <Button buttonName='cмотреть'/>
+                <div className={style.projectItem}>
+                    <div style={ProjectImgStyle} className={style.projectImg}>
+                        <div className={style.projectButton}>
+                            <Button buttonName='cмотреть'/>
+                        </div>
                     </div>
-                </div>
-                <div className={style.projectInfo}>
+                    <div className={style.projectInfo}>
                 <span className={style.projectName}>
                 {props.name}
                 </span>
-                    <span className={style.projectDesc} >
+                        <span className={style.projectDesc} >
                 {props.desc}
                 </span>
+                    </div>
                 </div>
             </div>
         )

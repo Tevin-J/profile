@@ -53,6 +53,11 @@
     box-shadow: 0 0 20px #6ab2af;
     transition: 0.5s;
 }
+
+.form input:-internal-autofill-selected {
+    background-color: rgb(232, 240, 254) !important;
+}
+
 .textareaForm {
     margin-bottom: 50px;
     width: 100%;
