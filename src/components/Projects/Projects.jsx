@@ -2,16 +2,18 @@ import React from 'react';
 import style from './Projects.module.css';
 import Project from "./Project/Project";
 import Title from "../Title/Title";
-import counter from '../../assets/img/counter.png';
 import socialNetwork from '../../assets/img/social-network.PNG';
 import balcony from '../../assets/img/balcony.PNG'
+import cats from '../../assets/img/cats.jpg'
 import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
     const projectData = [
-        {id: 1, name: 'Социальная сеть', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', img: socialNetwork},
-        {id: 2, name: 'Счетчик', desc: 'Написан на React', img: counter},
-        {id: 3, name: 'Лендинг на чистом JS', desc: 'Написан на чистом JS', img: balcony}
+        {id: 1, name: 'Социальная сеть', desc: 'Большой учебный проект социальной сети на React. В проекте применены как' +
+                ' функциональные, так и классовые компоненты. State management осуществляется посредством Redux, а так' +
+                ' же хуков. Взаимодействие с сервером при помощи библиотеки axios. Архитектура приложения четко разделена на три блока: UI, BLL, DAL.', img: socialNetwork},
+        {id: 2, name: 'Cats app', desc: 'Небольшое приложение о кошках, написанное в связке React-Redux-TypeScript. State management реализован посредством хуков', img: cats},
+        {id: 3, name: 'Landing page на чистом JS', desc: 'Проведена работа с табами, модальными окнами, формами, таймером. Весь функционал реализован на чистом JavaScript.', img: balcony}
     ];
     const projectsElements = projectData.map(title => <Project name={title.name} desc={title.desc} img={title.img}
                                                         key={title.id}/>)

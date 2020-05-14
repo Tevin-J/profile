@@ -6,46 +6,33 @@ import jsLogo from '../../assets/img/js.svg';
 import reactLogo from '../../assets/img/react.svg';
 import reduxLogo from '../../assets/img/redux.svg';
 import typeScriptLogo from '../../assets/img/typescript.svg';
-import htmlLogo from '../../assets/img/html-5.svg';
-import cssLogo from '../../assets/img/css.svg'
 import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
     const skillsData = [
         {
             id: 1,
-            name: 'HTML',
-            desc: 'Адаптивная верстка, верстка на гридах и флексах.',
-            icon: htmlLogo
-        },
-        {
-            id: 2,
-            name: 'JavaScript',
-            desc: 'Стрелочные функции, замыкания, промисы, контекст вызова, прототипы.',
-            icon: jsLogo
-        },
-        {
-            id: 3,
-            name: 'CSS',
-            desc: 'Основные возможности CSS3',
-            icon: cssLogo
-        },
-        {
-            id: 4,
-            name: 'Redux',
-            desc: 'HOC, connect, withRouter, reselect, compose, thunk, dispatch, action',
-            icon: reduxLogo
-        },
-        {
-            id: 5,
             name: 'React',
-            desc: 'Работал с функциональными и классовыми компонентами, использовал в работе хуки, локальный стейт, local storage, запросы на сервер',
+            desc: 'Работал с функциональными и классовыми компонентами, styled components, использовал в работе хуки, ' +
+                'локальный стейт, local storage, запросы на сервер. Знаю как использовать жизненные циклы компонент.',
             icon: reactLogo
         },
         {
-            id: 6,
+            id: 2,
+            name: 'Redux',
+            desc: 'Применял в работе High order components, такие как connect, withRouter. Использовал mapStateToProps, mapDispatchToProps, thunks. Работал с Redux-form, context API. Знаю REST API.',
+            icon: reduxLogo
+        },
+        {
+            id: 3,
+            name: 'JavaScript',
+            desc: 'Знаю стрелочные функции, замыкания, промисы, контекст вызова, прототипы, глубокое копирование, -spread -rest-операторы, деструктуризацию.',
+            icon: jsLogo
+        },
+        {
+            id: 4,
             name: 'TypeScript',
-            desc: 'Знаю TypeScript в связке с Redux. Знаю как типизировать reducer, api, component',
+            desc: 'Знаю TypeScript в связке с React и Redux. Умею типизировать reducers, thunks, actions, api, components.',
             icon: typeScriptLogo
         },
 

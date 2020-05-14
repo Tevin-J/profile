@@ -13,7 +13,7 @@
 {
     composes: containerInfo from '../../index.css';
     width: 90%;
-    height: 350px;
+    height: 150px;
 }
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './Hire.module.css'
 import Title from "../Title/Title";
-import Button from "../Button/Button";
 import Fade from 'react-reveal/Fade';
 
 const Hire = () => {
@@ -9,8 +8,7 @@ const Hire = () => {
         <div className={style.hire}>
             <div className={style.containerHire}>
                 <Fade>
-                    <Title titleName='Ищу работу в Краснодаре || Сочи'/>
-                    <Button buttonName='Откликнуться'/>
+                    <Title titleName='Являюсь выпускником IT-INCUBATOR.BY'/>
                 </Fade>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './MainInfo.module.css';
-import profilePhoto from '../../assets/img/profilePhoto.jpg';
+import profilePhoto from '../../assets/img/profilePhoto.PNG';
 
 const MainInfo = () => {
     return (

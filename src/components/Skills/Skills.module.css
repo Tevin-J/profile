@@ -74,6 +74,9 @@
         width: 100%;
         margin-bottom: 0;
     }
+    .skillDesc {
+        width: 50%;
+    }
     .skillIcon
     {
         height: 130px;
@@ -81,10 +84,6 @@
 }
 @media (min-width: 1270px)
 {
-    .containerSkills
-    {
-        grid-template-columns: repeat(3, 1fr);
-    }
     .skillIcon
     {
         height: 180px;
