@@ -29,7 +29,7 @@ const ContactsReduxForm = reduxForm({
 const Contacts = (props) => {
 
     const sendForm = (formData) => {
-        axios.post('http://localhost:3010/sendMessage', formData)
+        axios.post('https://smtp-server-nodejs.herokuapp.com/sendMessage', formData)
         props.clearForm()
     }
     return (
