@@ -20,7 +20,7 @@ const Skills = () => {
         {
             id: 2,
             name: 'Redux',
-            desc: 'Применял в работе High order components, такие как connect, withRouter. Использовал mapStateToProps, mapDispatchToProps, thunks. Работал с Redux-form, context API. Знаю REST API.',
+            desc: 'Применял в работе High order components. Использовал mapStateToProps, mapDispatchToProps, thunks. Работал с Redux-form, context API. Знаю REST API.',
             icon: reduxLogo
         },
         {

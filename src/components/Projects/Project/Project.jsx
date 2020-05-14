@@ -15,7 +15,7 @@ const Project = (props) => {
                 <div className={style.projectItem}>
                     <div style={ProjectImgStyle} className={style.projectImg}>
                         <div className={style.projectButton}>
-                            <Button buttonName='cмотреть'/>
+                            <Button buttonName='cмотреть' url={props.url}/>
                         </div>
                     </div>
                     <div className={style.projectInfo}>
