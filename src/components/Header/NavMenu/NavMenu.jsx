@@ -6,7 +6,9 @@ import {Link, animateScroll} from "react-scroll";
 const NavMenu = () => {
     return (
         <div className={style.navMenu}>
+            <Link>
                 <span onClick={animateScroll.scrollToTop} className={style.link}>Главная</span>
+            </Link>
             <Link to="skills" spy={true} smooth={true} duration={1000}>
                 <span className={style.link}>Навыки</span>
             </Link>
