@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "532b8a8f026d1a82543a9b212cf0fb2e",
+    "revision": "a6ed4d6481da9a773e585de0d88fe22b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "0f44730d14b5f305f364",
+    "revision": "fffeb856ad6aa79a66fc",
     "url": "/portfolio/static/css/main.820b1cdd.chunk.css"
   },
   {
-    "revision": "0df23f7ed9085fa65c73",
-    "url": "/portfolio/static/js/2.9facc791.chunk.js"
+    "revision": "1051c42aa6a6fdaec9e2",
+    "url": "/portfolio/static/js/2.4a69a3ee.chunk.js"
   },
   {
-    "revision": "0f44730d14b5f305f364",
-    "url": "/portfolio/static/js/main.10644922.chunk.js"
+    "revision": "fffeb856ad6aa79a66fc",
+    "url": "/portfolio/static/js/main.a2556ec1.chunk.js"
   },
   {
     "revision": "a4cc746e3e9374b39785",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0961ecaa11384823d41b4f81451a49e5",
     "url": "/portfolio/static/media/telegram.0961ecaa.svg"
+  },
+  {
+    "revision": "e6f634f299752f44abf8ffe5276971a4",
+    "url": "/portfolio/static/media/todolist.e6f634f2.jpg"
   },
   {
     "revision": "2dcf8108c2fae5ebebea75e4358ca9f3",
