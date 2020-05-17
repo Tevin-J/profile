@@ -63,7 +63,6 @@ const Skills = () => {
                 </Fade>
             </div>
         </div>
-
     )
 }
 
